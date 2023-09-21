@@ -1,0 +1,34 @@
+<body ng-controller="sanPhamController">
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Tên sản phẩm</th>
+        <th scope="col">Giá sản phẩm</th>
+        <th scope="col">Số lượng sản phẩm</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- Sử dụng directive để for dữ liệu: ng-repeat -->
+        <td>{{listSp.id}}</td>
+        <td>{{listSp.tensp}}</td>
+        <td>{{listSp.giasp}}</td>
+        <td><input type="text" ng-model="soLuong" ng-change="tongTien = tinhTongTien()"></td>
+
+      <tr>
+        <!-- Sử dụng directive để for dữ liệu: ng-repeat -->
+        <td>{{listSp2.id2}}</td>
+        <td>{{listSp2.tensp2}}</td>
+        <td>{{listSp2.giasp2}}</td>
+        <td><input type="text" ng-model="soLuong2" ng-change="tongTien = tinhTongTien()"></td>
+      </tr>
+      <h1>Tổng Tiền: {{tongTien}}</h1>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+</body>

@@ -1,0 +1,15 @@
+
+
+<body ng-controller="myCtrl">
+    <div>
+        <h1>Tính thuế thu nhập cá nhân</h1>
+        <label for="luongNam">Nhập tổng lương theo năm:</label>
+        <input type="number" id="luongNam" ng-model="luongNam" placeholder="Nhập tổng lương" />
+        <br>
+        <button ng-click="tinhThue()">Tính thuế</button>
+        <p>Số tiền thuế thu nhập cá nhân phải nộp: <span>{{thueTNCN}} VND</span></p>
+    </div>
+
+   
+</body>
+
